@@ -133,11 +133,74 @@
     color: #2B2E34
     font-size: 22px
     width: 50%
+    font-weight: bold
 
   &__items
     width: 100%
 
+  &__item
+    padding-top: 60px
+
+    &--title
+      color: #2B2E34
+      font-size: 18px
+      cursor: pointer
+
+    &--dpowdown
+      transition: 0.5s
+      height: 0
+      overflow: hidden
+      padding-top: 10px
   
+    &--meaning
+      font-size: 15px
+      margin-top: 16px
+      display: flex
+      align-items: center
+
+    &--meaning > label
+      display: flex
+      cursor: pointer
+    
+    &--meaning::before 
+      content: ''
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      margin-right: 23px
+    
+    &--meaning-red::before 
+      background-color: #FF6060
+
+    &--meaning-yellow::before 
+      background-color: #FFDC60
+
+    &--meaning-green::before 
+      background-color: #72E191
+
+    &--meaning-blue::before 
+      background-color: #6070FF
+
+    &--meaning-purple::before 
+      background-color: #A660FF
+    
+    &--meaning-pink::before 
+      background-color: #FF60AC
+
+    &--meaning-beige::before 
+      background-color: #EEC3AB
+
+    &--meaning-white::before 
+      background-color: #FFFFFF
+
+    &--meaning-black::before 
+      background-color: #292929
+
+    &--meaning-grey::before 
+      background-color: #9D9D9D
+
+    
+
 
   &__reset
     width: 50%
@@ -187,3 +250,98 @@
   
 .card:nth-of-type(3n)
   padding-right: 0px  
+
+
+.info 
+  padding-top: 190px
+
+  &__inner
+    margin: 0px 412px
+
+  &__title
+    font-size: 35px
+    color: #2B2E34
+  
+  &__text
+    white-space: pre-line
+
+  &__subtitle
+    font-size: 22px
+    color: #2B2E34
+
+.footer
+
+  padding-top: 247px
+
+  &__items
+    width: 100%
+    display: flex
+
+  &__item
+    width: 25%
+  
+  &__phone
+    padding-top: 65px
+    font-weight: bold
+
+  &__email
+    font-weight: bold
+
+  &__link
+    font-size: 16px
+    line-height: 33px
+    color: #7E838C
+
+  &__working-mode
+    white-space: pre-line
+    color: #7E838C
+    line-height: 28px
+
+  &__email
+    padding-top: 55px
+
+  &__socials
+    padding-top: 59px
+
+  &__subtitle
+    font-size: 18px
+    line-height: 23px
+    padding-bottom: 26px
+
+  &__item:nth-child(2)
+    padding: 0px 200px
+    
+  &__item:nth-child(3)
+    padding-right: 200px
+
+  &__sub
+    display: flex
+    width: 100%
+    padding: 106px 0px 38px 0px
+  
+
+  &__text
+    width: 25%
+    color: #7E838C
+    font-size: 16px
+    line-height: 20px
+
+.custom-checkbox
+  position: absolute
+  z-index: -1
+  opacity: 0
+
+.custom-checkbox+label::before 
+  content: ''
+  display: inline-block
+  width: 16px
+  height: 16px
+  flex-shrink: 0
+  flex-grow: 0
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 50% 50%
+  margin-right: 20px
+
+.custom-checkbox:checked+label::before 
+  background-image: url("../img/main/products/checked.png")

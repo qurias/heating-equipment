@@ -23,7 +23,7 @@
         <div class="header__items">
           <div class="header__item">
             <a class="header__item--link">
-              <img class="header__item--icon" src="img/header/basket.png">
+              <img class="header__item--icon" src="img/header/delivery.png">
             </a>
           </div>
           <div class="header__item">
@@ -101,21 +101,48 @@
           <div class="filter__items">
             <div class="filter__item">
               <div class="filter__item--title">Отопительное оборудование</div>
-              <div class="filter__item--dpowdown">
-                <div class="filter__item--meaning">Радиаторы отопления</div>
-                <div class="filter__item--meaning">Конвекторы отопления</div>
-                <div class="filter__item--meaning">Полотенцесушители</div>
-                <div class="filter__item--meaning">Арматура для радиаторов</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="heatingRadiators" name="heatingRadiators">
+                  <label for="heatingRadiators">Радиаторы отопления</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="heatingConvectors" name="heatingConvectors">
+                  <label for="heatingConvectors">Конвекторы отопления</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="towelDryers" name="towelDryers">
+                  <label for="towelDryers">Конвекторы отопления</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="fittingsForRadiators" name="fittingsForRadiators">
+                  <label for="fittingsForRadiators">Арматура для радиаторов</label>
+                </div>
               </div>
             </div>
             <div class="filter__item">
               <div class="filter__item--title">Бренд</div>
-              <div class="filter__item--dpowdown">
-                <div class="filter__item--meaning">Purmo</div>
-                <div class="filter__item--meaning">Irsap</div>
-                <div class="filter__item--meaning">Terma</div>
-                <div class="filter__item--meaning">Loten</div>
-                <div class="filter__item--meaning">Guardo</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="purmo" name="purmo">
+                  <label for="purmo">Purmo</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="irsap" name="irsap" >
+                  <label for="irsap">Irsap</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="terma" name="terma">
+                  <label for="terma">Terma</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="loten" name="loten">
+                  <label for="loten">Loten</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="guardo" name="guardo">
+                  <label for="guardo">Guardo</label>
+                </div>
               </div>
             </div>
             <div class="filter__item">
@@ -124,41 +151,84 @@
             </div>
             <div class="filter__item">
               <div class="filter__item--title">Количество секций</div>
-              <div class="filter__item--dpowdown">
-                <div class="filter__item--meaning">4</div>
-                <div class="filter__item--meaning">6</div>
-                <div class="filter__item--meaning">8</div>
-                <div class="filter__item--meaning">12</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="filfour" name="filfour">
+                  <label for="filfour">4</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="filsix" name="filsix">
+                  <label for="filsix">4</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="eight" name="eight">
+                  <label for="eight">8</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="twelve" name="twelve">
+                  <label for="twelve">12</label>
+                </div>
               </div>
             </div>
             <div class="filter__item">
               <div class="filter__item--title">Межосетевое расстояние</div>
-              <div class="filter__item--dpowdown">
-                <div class="filter__item--meaning">20 см</div>
-                <div class="filter__item--meaning">35 см</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="sm20" name="sm20">
+                  <label for="sm20">20 см</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="sm35" name="sm35">
+                  <label for="sm35">35 см</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="sm60" name="sm60">
+                  <label for="sm60">60 см</label>
+                </div>
+              </div>
+            </div>
+            <div class="filter__item">
+              <div class="filter__item--title">Площадь отопления</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="more19" name="more19">
+                  <label for="more19">Более 19м²</label>
+                </div>
+              <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="less8" name="less8">
+                  <label for="less8">Менее 8м²</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="from10to14" name="from10to14">
+                  <label for="from10to14">от 10 до 14 м²</label>
+                </div>
+                <div class="filter__item--meaning">
+                  <input class="custom-checkbox" type="checkbox" id="from15to26" name="from15to26">
+                  <label for="from15to26">от 15 до 26 м² </label>
+                </div>
               </div>
             </div>
             <div class="filter__item">
               <div class="filter__item--title">Цвет</div>
-              <div class="filter__item--dpowdown">
-                <div class="filter__item--meaning">Красный</div>
-                <div class="filter__item--meaning">Желтый</div>
-                <div class="filter__item--meaning">Зеленый</div>
-                <div class="filter__item--meaning">Синий</div>
-                <div class="filter__item--meaning">Фиолетовый</div>
-                <div class="filter__item--meaning">Розовый</div>
-                <div class="filter__item--meaning">Бежевый</div>
-                <div class="filter__item--meaning">Белый</div>
-                <div class="filter__item--meaning">Черный</div>
-                <div class="filter__item--meaning">Серый</div>
+              <div class="filter__item--dpowdown" data-open="close">
+                <div class="filter__item--meaning filter__item--meaning-red">Красный</div>
+                <div class="filter__item--meaning filter__item--meaning-yellow"">Желтый</div>
+                <div class="filter__item--meaning filter__item--meaning-green"">Зеленый</div>
+                <div class="filter__item--meaning filter__item--meaning-blue"">Синий</div>
+                <div class="filter__item--meaning filter__item--meaning-purple"">Фиолетовый</div>
+                <div class="filter__item--meaning filter__item--meaning-pink"">Розовый</div>
+                <div class="filter__item--meaning filter__item--meaning-beige"">Бежевый</div>
+                <div class="filter__item--meaning filter__item--meaning-white"">Белый</div>
+                <div class="filter__item--meaning filter__item--meaning-black"">Черный</div>
+                <div class="filter__item--meaning filter__item--meaning-grey"">Серый</div>
               </div>
             </div>
           </div>
         </div>
         <div class="catalog__products">
           <div class="catalog__sorting">
-            <div class="catalog__number-goods">2394&nbsp;&nbsp;товаров</div>
-            <div class="catalog__sorting-by">Цена:&nbsp;По&nbsp;возрастанию</div>
+            <div class="catalog__number-goods"><strong>2394</strong>&nbsp;&nbsp;товаров</div>
+            <div class="catalog__sorting-by">Цена:&nbsp;<strong>По&nbsp;возрастанию</strong></div>
           </div>
           <div class="catalog__items">
             <div class="card">
@@ -197,12 +267,115 @@
                 <img src="img/main/products/basket.png">
               </div>
             </div>
+            
           </div>
         </div>
       </div>
     </div>
+    <div class="info">
+      <div class="info__inner">
+        <div class="info__title">Длинный или короткий заголовок SEO текста</div>
+        <div class="info__text">
+          Интернет-магазин автоматической водосберегающей сантехники и дизайн радиаторов отопления 
+          Сантехническое и отопительное оборудование - основные продукты интернет-магазина "Экон Урфо". 
+          На сайте urfoecon.ru, вы можете выбрать и купить автоматическую водосберегающую сантехнику и дизайн радиаторы отопления. На 
+          сайте urfoecon.ru, вы можете выбрать: смесители, душевые, смывные устройства для унитазов и писсуаров, а так же дополнительные 
+          товары: сушилки для рук, дозаторы мыла, фены для волос, держатели туалетной бумаги, ведра и другое.
+        </div>
+        <div class="info__text">
+          Преимущества автоматической водосберегающей сантехники — экономия денег и воды! Результат будет заметен с первого месяца 
+          установки. Обратитесь к нашим специалистам и узнайте вашу выгоду при использовании автоматической водосберегающей сантехники. 
+          Звоните или оставляйте заявку на расчет.
+        </div>
+        <div class="info__subtitle">
+          Подзаголовок внутри текста
+        </div>
+        <div class="info__text">
+          На сайте urfoecon.ru, вы можете выбрать красивые современные модели радиаторов отопления Европейских и Российских 
+          производителей. Радиаторы представленные в каталоге,изготовлены из прочных материалов: сталь, алюминий и биметалл. Мы уверены в 
+          качестве нашей продукции и предоставляем гарантию до 25 лет на радиаторы отопления. В нашем ассортименте: водяные и 
+          электрические радиаторы, высокие, средние и низкие, узкие и широкие, трубчатые и панельные модели, стандартные белые, черные, 
+          бежевые и любые цвета по шкале RAL.
+        </div>
+
+      </div>
+    </div>
   </main>
-  <footer></footer>
-    <script src='script.js'></script>
+  <footer class="footer">
+    <div class="footer__inner container">
+      <div class="footer__items">
+        <div class="footer__item">
+          <div class="footer__logo">
+            <img src="img/footer/logo.png">
+          </div>
+          <div class="footer__phone">
+            +7 (495) 506-36-50
+          </div>
+          <div class="footer__working-mode">
+            Пн-Пт:&nbsp;c&nbsp;08:00&nbsp;до&nbsp;19:00
+            Сб-Вс:&nbsp;с&nbsp;08:00&nbsp;до&nbsp;16:00
+          </div>
+          <div class="footer__email">
+            office@uconerfo.ru
+          </div>
+          <div class="footer__socials">
+            Мы в сети
+            <div class="footer__social">Вконтакте</div>
+            <div class="footer__social">Instagram</div>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__subtitle">Категории продукции</div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__subtitle">Категории продукции</div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+          <div class="footer__link"><a>Водосберегающая сантехника</a></div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__subtitle">Информация</div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+          <div class="footer__link"><a>Доставка и оплата</a></div>
+        </div>
+      </div>
+      <div class="footer__sub">
+        <div class="footer__text">Copyright © 2014 - 2020</div>
+        <div class="footer__text">Политика конфиденциальности</div>
+        <div class="footer__text">Обработка персональной информации</div>
+        <div class="footer__text">Разработано</div>
+      </div>
+    </div>
+  </footer>
+    <script src='js/jquery-3.6.0.min.js'></script>
+    <script src='js/script.js'></script>
 </body>
 </html>
